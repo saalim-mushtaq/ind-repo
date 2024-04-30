@@ -1,11 +1,12 @@
 name: CI Workflow
 
 on:
-  workflow_dispatch:
-  
+  workflow_dispatch:  # Trigger on manual workflow dispatch
+
 jobs:
   common_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Include Workflow from Template Repo
+      - name: Include Workflow from Template Repo (Incorrect Indentation)
         uses: cryptlex/test-repo/.github/workflows/pr_agent.yml@main
+        # This line references the reusable workflow (Incorrect Placement)
