@@ -1,9 +1,16 @@
-const baseValue = prompt('Enter the base of a triangle: ');
-const heightValue = prompt('Enter the height of a triangle: ');
+//JavaScript program to swap two variables
 
-// calculate the area
-const areaValue = (baseValue * heightValue) / 2;
+//take input from the users
+let a = prompt('Enter the first variable: ');
+let b = prompt('Enter the second variable: ');
 
-console.log(
-  `The area of the triangle is ${areaValue}`
-);
+//create a temporary variable
+let temp;
+
+//swap variables
+temp = a;
+a = b;
+b = temp;
+
+console.log(`The value of a after swapping: ${a}`);
+console.log(`The value of b after swapping: ${b}`);
